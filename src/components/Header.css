@@ -1,0 +1,113 @@
+/* HEADER STYLESHEET */
+header{
+  background-image: url('../sources/headerBg.webp');
+  background-size: cover;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 0px 0px 60px 60px;
+}
+.headerContainer{
+  padding: 0px 20px;
+}
+
+.headerTitle{
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.headerTitle h1{
+  color: white;
+  font-style: italic; 
+}
+
+.brandName{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.headerLogo{
+  width: 150px;
+  margin-left: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  margin: 40px auto;
+}
+
+/* search bar */
+form{
+  display: inline-flex;
+  width: 50%;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 2px solid rgba(255, 255, 255, 0.747);
+  float: left;
+  color: white;
+  outline: none;
+  width: 80%;
+  background: #000000;
+  border-radius: 0px 0px 0px 15px;
+}
+form.example input:focus {
+  border: 2px solid rgba(255, 255, 255, 0.747);
+  text-decoration: none;
+  outline: none;
+}
+
+form.example input::placeholder{
+  color: rgb(197, 197, 197);
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: black;
+  color: white;
+  font-size: 17px;
+  border: 2px solid rgba(255, 255, 255, 0.747);
+  border-radius: 0px 15px 0px 0px;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: rgb(19, 19, 19);
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width:1300px) {
+  .headerTitle h1{
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+  }
+  .wrap{
+    margin: 0px auto;
+  }
+  form{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 2px solid rgba(255, 255, 255, 0.747);
+    float: left;
+    color: white;
+    outline: none;
+    width: 100%;
+    background: #000000;
+    border-radius: 0px 0px 0px 15px;
+  }
+}
